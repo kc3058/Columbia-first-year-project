@@ -1,0 +1,81 @@
+##############################################################################
+#
+# Author    : Anthony Chow
+# Date      : 1st May 2021
+#
+# File name : inputs
+#
+# Description : File contains user's specified 
+#               input parameters for both 
+#               multiphase galactic wind
+#
+###############################################################################
+
+######CLOUDS##############
+V_CELLS = 150
+M_CELLS = 150
+R_CELLS = 40        
+
+V_MAX = 2000
+V_MIN = 10
+V_MU =     100 #31.622776601683793    #200   
+V_SIGMA =  10     # 0.00000000001        #25
+M_MAX = 8     #5
+M_MIN = -1    #-1
+M_MU = 3    #3   
+M_SIGMA = 0.5    #0.5   #0.1
+
+CLOUD_TEMP = 1E4      # 1E4
+F_TURB0 = 0.1
+MDOT_CHI_POWER = 0.5
+TURBULENT_VELOCITY_CHI_POWER = 0.0
+GEOMETRIC_FACTOR = 1.0
+COOLING_AREA_CHI_POWER  = 0.5
+COLD_TURBULENCE_CHI_POWER = -0.5
+MDOT_COEFFICIENT = 0.33333333333333
+DRAG_COEFF = 0.5 # 0.5
+
+RETIREMENT_MASS = 0.25
+RETIRE_FLAG = 1
+M_CLOUD_MIN = 0.01
+
+CLOUD_ALPHA = 0.2 #0.2  # Cloud flux loading factor
+CLOUD_METALLICITY = 1
+
+#####WIND#############
+WIND_MU = 0.62    # mean molecular weight
+SFR = 20 # (Msun/yr)    #20
+BETA =  0.1   #0.1   # mass loading
+ALPHA = 1.  # energy loading
+E_SN = 1E51  #1E51    #(erg/s)
+M_PER_SN = 100   #100
+
+
+SONIC_POINT = 300
+R_MIN = 100
+R_DELTA = 20   # (pc)
+COOL_FILE = Lambda_tab_redshifts.npz
+WIND_METALLICITY = 2
+
+V_CIR = 150 #(km/s) 150
+
+BACK_REACTION = 1
+
+
+
+######Control########
+TWO_FACES = 1
+FLUX_CORRECTION = 0
+CUST_SCHEDULE = 0
+CLOUD_INJECTION_MODE = 1  # 1-Continuous 0-Single
+CLOUD_INJECTION_START = 310 #pc
+CLOUD_INJECTION_END =  400 #pc
+CLOUD_MIN_INJECTION_STEP = 10 #pc
+
+######MonteCarlo########
+NBS_CLOUD = 10000
+CFL_MC = 0.0001 #0.002
+CFL_VC = 0.001 #0.05
+POWER_LAW_MAX_MASS = 7 #3.000000000001    #2.01
+POWER_LAW_MIN_MASS = 1.5 #   3   #2
+POWER_LAW_SLOPE = -2  #-2
